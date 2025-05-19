@@ -1,6 +1,6 @@
 <?php
 // target email
-$to = 'ben@wpg-plan.com';
+$to = 'contact@infinityview.ca';
 
 // pull and sanitize input
 $name    = trim(filter_input(INPUT_POST, 'name',    FILTER_SANITIZE_STRING));
