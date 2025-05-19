@@ -215,8 +215,10 @@ header.show {
 }
 
 /* ---------------------
-      styles/hero.css 
-      -----------------------------*/
+   styles/hero.css
+   --------------------- */
+
+/* Base hero styles */
 .hero-section {
   position: relative;
   width: 100%;
@@ -224,8 +226,8 @@ header.show {
   background-image: url('../images/window-clean.webp');
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
-
 
 .hero-overlay {
   position: absolute;
@@ -236,8 +238,8 @@ header.show {
 .hero-content {
   position: relative;
   z-index: 10;
-  height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -245,6 +247,7 @@ header.show {
   color: #fff;
   max-width: 800px;
   margin: 0 auto;
+  height: 100%;
 }
 
 .hero-content h1 {
@@ -256,6 +259,43 @@ header.show {
 .hero-content p {
   font-size: 1.125rem;
   line-height: 1.6;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto;
+    min-height: 80vh;
+    background-position: center top;
+  }
+  .hero-content {
+    padding: 2rem 1rem;
+    max-width: 100%;
+  }
+  .hero-content h1 {
+    font-size: 2.25rem;
+    margin-bottom: 0.75rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    min-height: 60vh;
+  }
+  .hero-content {
+    padding: 1.5rem 0.75rem;
+  }
+  .hero-content h1 {
+    font-size: 1.75rem;
+  }
+  .hero-content p {
+    font-size: 0.9rem;
+    line-height: 1.3;
+  }
 }
 
 
@@ -659,4 +699,62 @@ a.mind-blowing-button:active {
   color: var(--color-cool-gray);
   font-size: 0.875rem;
   margin-bottom: 20px;
+}
+
+/* --------------------------------------------------
+   Contact Section (White Background, Spaced + Icons)
+---------------------------------------------------- */
+.contact-section {
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+  background-color: var(--color-cloud-white);
+  padding: 80px 20px;               /* extra vertical padding */
+  text-align: center;
+  color: var(--color-infinity-black);
+}
+
+.contact-section h2 {
+  font-size: 3rem;                  /* bigger heading */
+  color: var(--color-sky-blue);
+  margin-bottom: 2rem;
+}
+
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;                        /* lots of space between items */
+  align-items: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;                        /* space between icon & text */
+  font-size: 1.5rem;                /* larger text */
+}
+
+.contact-icon svg {
+  width: 36px;
+  height: 36px;
+  fill: var(--color-sky-blue);     /* match your accent color */
+}
+
+.contact-item a {
+  color: var(--color-infinity-black);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-item a:hover {
+  color: var(--color-sky-blue);
+  text-decoration: underline;
+}
+
+.contact-note {
+  margin-top: 2.5rem;
+  font-size: 1.125rem;
+  color: var(--color-cool-gray);
 }

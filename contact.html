@@ -1,10 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact Us</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Infinity View Window and Home Maintentence</title>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- bxSlider CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" />
+
+  <!-- Basic favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images\infinityview-logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images\infinityview-logo.png">
+
+  <!-- Apple Touch Icon for iOS -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images\infinityview-logo.png">
 </head>
 <body>
+<!-- Site Header (logo + navigation) -->
+<header id="header" class="show">
+    <!-- Logo -->
+    <div class="header-logo">
+      <a href="index.html" aria-label="Home">
+        <img src="images\infinityview-logo.png" alt="Infinity View Logo" />
+      </a>
+    </div>    
+    <!-- Checkbox for toggling menu -->
+    <input type="checkbox" id="toggle-menu" class="menu-toggle-checkbox" aria-label="Toggle navigation" />
+    <!-- Hamburger lines -->
+    <label for="toggle-menu" class="hamburger-lines">
+      <span class="line line1"></span>
+      <span class="line line2"></span>
+      <span class="line line3"></span>
+    </label>
+    <!-- Navigation -->
+    <nav class="header-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  <!-- Phone number (desktop only) -->
+  <div class="header-phone">
+  <a href="tel:+14313883413">(431) 388-3413</a>
+  </div>
+</header>
+
+
+<section class="contact-section">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <ul class="contact-list">
+      <li class="contact-item">
+        <span class="contact-icon">
+          <!-- Mail icon (inline SVG) -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 4h20v16H2z" fill="none"/>
+            <path d="M22 6l-10 7L2 6v12h20V6zm-10 5L2 6h20l-10 5z"/>
+          </svg>
+        </span>
+        <a href="mailto:contact@infinityview.ca">contact@infinityview.ca</a>
+      </li>
+      <li class="contact-item">
+        <span class="contact-icon">
+          <!-- Phone icon (inline SVG) -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 01.94-.27 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.27.94l-2.18 2.27z"/>
+          </svg>
+        </span>
+        <a href="tel:+14313883413"> (431) 388-3413</a>
+      </li>
+    </ul>
+    <p class="contact-note">to book a quote or for more info.</p>
+  </div>
+</section>
+
+
+
+<!--<body>
   <form action="send_email.php" method="post">
     <label>
       Your Name:<br>
@@ -28,5 +104,20 @@
 
     <button type="submit">Send</button>
   </form>
-</body>
+</body> -->
+ 
+<!-- Footer -->
+  <footer class="footer-section">
+    <div class="footer-container">
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p><a href="tel:+14313883413">(431) 388-3413</a></p>
+        <p><a href="mailto:contact@infinityview.ca">contact@infinityview.ca</a></p>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <p class="footer-copy">© 2025 Infinity View</p>
+  </footer>
+
+
 </html>
