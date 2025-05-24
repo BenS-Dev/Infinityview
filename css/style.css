@@ -699,6 +699,16 @@ a.mind-blowing-button:active {
   font-size: 0.875rem;
   margin-bottom: 20px;
 }
+.footer-link {
+  color: var(--color-cloud-white);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-link:hover {
+  color: var(--color-sky-blue);
+  text-decoration: underline;
+}
+
 
 /* ---------------------------------
    Contact Page Styles
@@ -789,4 +799,93 @@ a.mind-blowing-button:active {
   .form-row {
     flex-direction: column;
   }
+}
+
+
+/* ----------------------------------------------------
+   Privacy Policy
+---------------------------------------------------- */
+
+/* ----------------------------------------------------
+   Terms & Conditions Overrides
+---------------------------------------------------- */
+
+.terms-container {
+  /* match site padding for sections */
+  padding: 80px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;                        /* paragraphs left-aligned */
+  color: var(--color-infinity-black);      /* dark text on white bg */
+  font-family: 'Montserrat', 'Poppins';    /* brand fonts */
+  line-height: 1.8;
+}
+
+.terms-title {
+  font-size: 2.75rem;                     /* same scale as .our-work-section h2 */
+  color: var(--color-sky-blue);           /* accent heading color */
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.terms-section-title {
+  font-size: 1.5rem;
+  color: var(--color-infinity-black);
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+/* body text paragraphs */
+.terms-text {
+  margin-bottom: 1.25rem;
+}
+
+/* Remove native bullets and use pseudo-elements for colored dots */
+.terms-list {
+  list-style: none;
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  counter-reset: list-counter;            /* for ordered lists */
+}
+
+.terms-list-item {
+  position: relative;
+  padding-left: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+.terms-list-item::before {
+  content: "•";                           /* bullet */
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.2em;
+  line-height: 1;
+  color: var(--color-sky-blue);
+}
+
+/* ordered lists */
+.terms-list.ordered {
+  counter-reset: list-counter;
+}
+
+.terms-list.ordered .terms-list-item {
+  counter-increment: list-counter;
+}
+
+.terms-list.ordered .terms-list-item::before {
+  content: counter(list-counter) ".";
+  font-weight: 600;
+}
+
+/* links in the terms copy */
+.terms-link {
+  color: var(--color-sky-blue);
+  text-decoration: underline;
+}
+
+.terms-link:hover {
+  color: var(--color-midnight-blue);
+  text-decoration: none;
 }
