@@ -272,7 +272,9 @@ header.show {
 /* Responsive tweaks */
 @media (max-width: 768px) {
   .hero-section {
-    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-height: 80vh;
     background-position: center top;
   }
@@ -280,6 +282,7 @@ header.show {
   .hero-content {
     padding: 2rem 1rem;
     max-width: 100%;
+    height: auto;
   }
 
   .hero-content h1 {
@@ -295,6 +298,9 @@ header.show {
 
 @media (max-width: 480px) {
   .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-height: 60vh;
   }
 
@@ -738,11 +744,17 @@ a.mind-blowing-button:active {
   width: 90%;
 }
 
-.footer-copy {
+/* make both links match the footer-copy text style */
+.footer-copy .footer-link {
   color: var(--color-cool-gray);
   font-size: 0.875rem;
-  margin-bottom: 20px;
 }
+
+/* add a little horizontal breathing room before the second link */
+.footer-copy .footer-link + .footer-link {
+  margin-left: 0.25rem;
+}
+
 
 .footer-link {
   color: var(--color-cloud-white);
@@ -1040,44 +1052,54 @@ a.mind-blowing-button:active {
   /* Doubled gap between cards */
 }
 
-.owner-card {
-  width: clamp(300px, 24vw, 380px);
-  /* Slightly smaller card for better image fit */
-  box-sizing: border-box;
-  background: #fff;
-  padding: 24px;
+Image
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.member-panel {
+  /* stretch nearly full viewport, with 16px gutters on each side */
+  width: calc(100vw - 32px);
+  margin: 0 calc(50% - 50vw + 16px);
+
+  height: 480px;              /* same height as before */
+  position: relative;
+  background-size: cover;
+  background-position: center;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
 }
 
-.owner-photo {
+
+.member-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  aspect-ratio: 1 / 1.18;
-  /* Slightly taller image */
-  max-height: 370px;
-  /* Allow more vertical space */
-  object-fit: cover;
-  object-position: top center;
-  /* Show more of the top part */
-  border-radius: 4px;
-  display: block;
-  margin: 0 auto var(--spacing-md);
+  padding: 1.5rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+  color: #fff;
+  box-sizing: border-box;
 }
 
-.owner-name {
-  font-size: 1.25rem;
-  margin-bottom: 8px;
+.member-name {
+  margin: 0 0 0.25rem;
+  font-size: 1.5rem;
 }
 
-.owner-role {
+.member-role {
+  margin: 0 0 0.75rem;
   font-style: italic;
-  color: var(--color-muted);
-  margin-bottom: var(--spacing-md);
+  opacity: 0.9;
 }
 
-.owner-bio {
-  font-size: 0.95rem;
-  color: var(--color-dark);
+.member-bio {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4;
 }
