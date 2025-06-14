@@ -957,8 +957,21 @@ a.mind-blowing-button:active {
 }
 
 /* ----------------------------------------------------
-   About Us Page Styles
+   About Us Page
 ---------------------------------------------------- */
+
+/* File: css/about-custom.css */
+
+/* Color & spacing variables */
+:root {
+  --color-primary: #0099e5;
+  --color-dark: #222222;
+  --color-light: #f9f9f9;
+  --color-muted: #555555;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --max-width: 1200px;
+}
 
 /* Hero Banner (edge-to-edge photo) */
 .about-hero {
@@ -969,13 +982,13 @@ a.mind-blowing-button:active {
   background-position: center;
   color: #fff;
   text-align: center;
-  padding: 80px 1rem;
+  padding: 80px var(--spacing-md);
 }
 
 .about-hero .about-title {
   font-size: 3rem;
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-md);
 }
 
 .about-hero .about-subtitle {
@@ -988,45 +1001,58 @@ a.mind-blowing-button:active {
   width: 100vw;
   margin: 0 calc(50% - 50vw);
   max-width: 100vw;
-  padding: 48px 1rem;
+  padding: 48px var(--spacing-md);
   text-align: center;
-  background: #f9f9f9;
+  background: var(--color-light);
   box-sizing: border-box;
 }
 
 .mission-title {
   font-size: 2rem;
-  color: #3B82F6;
-  margin-bottom: 1rem;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-md);
 }
 
 .mission-copy {
   font-size: 1rem;
-  color: #222222;
+  color: var(--color-dark);
   max-width: 800px;
   margin: 0 auto;
 }
 
-/* Team section */
+/* Team section (edge-to-edge background with 16px gap) */
 .about-team {
-  width: 100vw;
-  margin: 0 calc(50% - 50vw);
-  background: #f9f9f9;
-  padding: 48px 1rem;
+  width: calc(100vw - 32px);
+  margin: 0 calc(50% - 50vw + 16px);
+  background: var(--color-light);
+  padding: 48px var(--spacing-md);
   box-sizing: border-box;
 }
 
 .team-content {
-  max-width: 1200px;
+  max-width: var(--max-width);
   margin: 0 auto;
 }
 
 .team-title {
   text-align: center;
   font-size: 2rem;
-  color: #3B82F6;
+  color: var(--color-primary);
   margin-bottom: 24px;
 }
+
+.team-grid {
+  display: flex;
+  /* side-by-side */
+  flex-wrap: wrap;
+  /* wrap if viewport too narrow */
+  justify-content: center;
+  /* center the row */
+  gap: 80px;
+  /* Doubled gap between cards */
+}
+
+Image
 
 .team-grid {
   display: flex;
@@ -1035,87 +1061,45 @@ a.mind-blowing-button:active {
   gap: 2rem;
 }
 
-/* Team member card with proper image display */
 .member-panel {
-  max-width: 600px;
-  width: 100%;
-  margin: 0 auto;
-  border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-  overflow: hidden;
-  background: #fff;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+  /* stretch nearly full viewport, with 16px gutters on each side */
+  width: calc(100vw - 32px);
+  margin: 0 calc(50% - 50vw + 16px);
 
-.member-panel:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 35px rgba(0,0,0,0.2);
-}
-
-/* Image container with proper aspect ratio - made longer */
-.member-image {
-  width: 100%;
-  height: 500px;
-  overflow: hidden;
+  height: 480px;              /* same height as before */
   position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
 }
 
-.member-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-  transition: transform 0.3s ease;
-}
 
-.member-panel:hover .member-image img {
-  transform: scale(1.05);
-}
-
-/* Content area with better spacing - centered text */
 .member-info {
-  padding: 2rem;
-  text-align: center;
-  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+  color: #fff;
+  box-sizing: border-box;
 }
 
 .member-name {
-  margin: 0 0 0.5rem;
-  font-size: 1.75rem;
-  font-weight: 600;
-  color: #222222;
+  margin: 0 0 0.25rem;
+  font-size: 1.5rem;
 }
 
 .member-role {
-  margin: 0 0 1rem;
-  font-size: 1.1rem;
+  margin: 0 0 0.75rem;
   font-style: italic;
-  color: #3B82F6;
-  font-weight: 500;
+  opacity: 0.9;
 }
 
 .member-bio {
   margin: 0;
   font-size: 1rem;
-  line-height: 1.6;
-  color: #555555;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .member-panel {
-    margin: 0 1rem;
-  }
-  
-  .member-image {
-    height: 450px;
-  }
-  
-  .member-info {
-    padding: 1.5rem;
-  }
-  
-  .member-name {
-    font-size: 1.5rem;
-  }
+  line-height: 1.4;
 }
