@@ -1,124 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gulfshine | Contact Us</title>
-
-  <!-- Main CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Infinity View | Fort Lauderdale Window Cleaning Experts</title>
+  <meta name="description" content="Connect with Infinity View for luxury window cleaning, pressure washing, and exterior detailing across Fort Lauderdale and South Florida." />
   <link rel="stylesheet" href="css/style.css" />
-
-  <!-- bxSlider CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" />
-
-  <!-- Basic favicons -->
-  <link rel="icon" type="image/png" sizes="32x32" href="images\Gulfshine-Logo.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images\Gulfshine-Logo.png">
-
-  <!-- Apple Touch Icon for iOS -->
-  <link rel="apple-touch-icon" sizes="180x180" href="images\Gulfshine-Logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/Gulfshine-Logo.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/Gulfshine-Logo.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/Gulfshine-Logo.png" />
 </head>
 
-
-<!-- Site Header (logo + navigation) -->
-<header id="header" class="show">
-  <!-- Logo -->
-  <div class="header-logo">
-    <a href="index.html" aria-label="Home">
-      <img src="images\Gulfshine-Logo.png" alt="Gulfshine Logo" />
-    </a>
-  </div>
-  <!-- Checkbox for toggling menu -->
-  <input type="checkbox" id="toggle-menu" class="menu-toggle-checkbox" aria-label="Toggle navigation" />
-  <!-- Hamburger lines -->
-  <label for="toggle-menu" class="hamburger-lines">
-    <span class="line line1"></span>
-    <span class="line line2"></span>
-    <span class="line line3"></span>
-  </label>
-  <!-- Navigation -->
-  <nav class="header-nav">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </nav>
-  <!-- Phone number (desktop only) -->
-  <div class="header-phone">
-    <a href="tel:+15617714853">(561) 771-GULF</a>
-  </div>
-</header>
-
-
-
-<section class="contact-section">
-  <h1>Get in Touch</h1>
-  <div class="contact-form-wrapper">
-    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
-      <input type="hidden" name="access_key" value="db81d39a-7636-4c54-85d6-deaececc4a8c" />
-
-      <div class="form-group">
-        <label for="fullName" class="form-label">Full Name</label>
-        <input type="text" id="fullName" name="fullName" class="form-input" placeholder="Jane Doe" required />
-      </div>
-
-      <div class="form-row">
-        <div class="form-group">
-          <label for="phone" class="form-label">Phone Number</label>
-          <input type="tel" id="phone" name="phone" class="form-input" placeholder="(123) 456-7891" required />
-        </div>
-        <div class="form-group">
-          <label for="email" class="form-label">Email Address</label>
-          <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" required />
+<body>
+  <header id="header" class="site-header show">
+    <div class="header-container">
+      <div class="brand">
+        <a href="index.html" aria-label="Infinity View home">
+          <img src="images/Gulfshine-Logo.png" alt="Infinity View logo" />
+        </a>
+        <div class="brand-text">
+          <span class="brand-name">Infinity View</span>
+          <span class="brand-tagline">Window Washing • Pressure Washing</span>
         </div>
       </div>
-
-      <div class="form-group">
-        <label for="address" class="form-label">Address</label>
-        <input type="text" id="address" name="address" class="form-input" placeholder="123 Main St, City, Province"
-          required />
-      </div>
-
-      <div class="form-group">
-        <label for="description" class="form-label">What are you looking for?</label>
-        <textarea id="description" name="description" class="form-textarea" rows="4"
-          placeholder="Describe your request in detail…" required></textarea>
-      </div>
-
-      <button type="submit" class="submit-btn">Submit</button>
-    </form>
-  </div>
-</section>
-
-
-
-
-
-
-  <!-- Footer -->
-  <footer class="footer-section">
-    <div class="footer-container">
-      <div class="footer-contact">
-        <h3>Contact Us</h3>
-        <p><a href="tel:+18444853744">1-844-GULFSHINE</a></p>
-        <p><a href="tel:+15617714853">(561) 771-GULF</a></p>
-        <p><a href="mailto:contact@gulfshineservices.com">contact@gulfshineservices.com</a></p>
+      <input type="checkbox" id="toggle-menu" class="menu-toggle-checkbox" aria-label="Toggle navigation" />
+      <label for="toggle-menu" class="hamburger-lines" aria-hidden="true">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </label>
+      <nav class="header-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#work">Our Work</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a class="header-phone" href="tel:+19545830222">(954) 583-0222</a>
+        <a class="header-cta" href="index.html#contact-cta">Request a Quote</a>
       </div>
     </div>
-    <hr class="footer-divider">
-    <p class="footer-copy">
-      © 2025 Gulfshine | <a href="privacy.html" class="footer-link">Privacy Policy</a> | Website by <a
-        href="https://bensilver.ca" class="footer-link" target="_blank" rel="noopener">BenSilver.ca</a>
-    </p>
+  </header>
 
+  <section class="contact-section">
+    <h1>Get in Touch</h1>
+    <p class="contact-subtitle">We respond within one business day to schedule your Fort Lauderdale or South Florida exterior cleaning.</p>
+    <div class="contact-form-wrapper">
+      <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="db81d39a-7636-4c54-85d6-deaececc4a8c" />
+        <div class="form-group">
+          <label for="fullName" class="form-label">Full Name</label>
+          <input type="text" id="fullName" name="fullName" class="form-input" placeholder="Jane Doe" required />
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="tel" id="phone" name="phone" class="form-input" placeholder="(954) 555-1234" required />
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="address" class="form-label">Service Address</label>
+          <input type="text" id="address" name="address" class="form-input" placeholder="123 Las Olas Blvd, Fort Lauderdale, FL" required />
+        </div>
+        <div class="form-group">
+          <label for="description" class="form-label">What can we make shine?</label>
+          <textarea id="description" name="description" class="form-textarea" rows="4" placeholder="Tell us about your windows, pressure washing needs, or maintenance schedule." required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer-section">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="footer-logo" aria-label="Infinity View home">
+          <img src="images/Gulfshine-Logo.png" alt="Infinity View logo" />
+        </a>
+        <p>Infinity View Window Washing brings concierge-level glass and exterior care to Fort Lauderdale, Miami, and the greater South Florida coastline.</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul class="footer-list">
+          <li><a href="tel:+19545830222">(954) 583-0222</a></li>
+          <li><a href="mailto:contact@gulfshineservices.com">contact@gulfshineservices.com</a></li>
+          <li>Fort Lauderdale, Florida</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul class="footer-list">
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#process">Our Process</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Service Areas</h3>
+        <ul class="footer-list">
+          <li>Fort Lauderdale</li>
+          <li>Miami &amp; Miami Beach</li>
+          <li>Boca Raton &amp; Palm Beach</li>
+          <li>Broward &amp; Palm Beach Counties</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Infinity View Window Washing. Crafted for stunning South Florida views.</p>
+    </div>
   </footer>
 
-  
-<!--Script for Header-Footer-->
-<script src="js/Header-Footer.js"></script>
-<!--Script for Header-Footer-->
-<script src="js/contact.js"></script>
-
+  <script src="js/Header-Footer.js"></script>
+  <script src="js/contact.js"></script>
+</body>
 </html>
