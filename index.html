@@ -1,219 +1,427 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>South Florida Window Cleaning & Gutter Maintenance | Gulfshine</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fort Lauderdale Window Cleaning & Pressure Washing | Infinity View</title>
+  <meta name="description" content="Infinity View delivers luxury window cleaning, pressure washing, and exterior detailing for homes and businesses in Fort Lauderdale and South Florida. Crystal-clear glass, eco-friendly methods, and concierge-level service." />
+  <meta name="keywords" content="Fort Lauderdale window washing, South Florida window cleaning, pressure washing Fort Lauderdale, exterior cleaning Broward County" />
+  <meta property="og:title" content="Fort Lauderdale's Premier Window Cleaning Experts" />
+  <meta property="og:description" content="Spotless, streak-free window cleaning and exterior detailing for luxury homes and businesses across South Florida." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://gulfshineservices.com" />
+  <meta property="og:image" content="https://gulfshineservices.com/images/gulfshine-logo.png" />
 
-  <!-- Main CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+
   <link rel="stylesheet" href="css/style.css" />
-
-  <!-- bxSlider CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" />
-
-  <!-- Basic favicons -->
-  <link rel="icon" type="image/png" sizes="32x32" href="images\Gulfshine-Logo.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images\Gulfshine-Logo.png">
-
-  <!-- Apple Touch Icon for iOS -->
-  <link rel="apple-touch-icon" sizes="180x180" href="images\Gulfshine-Logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/Gulfshine-Logo.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/Gulfshine-Logo.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/Gulfshine-Logo.png" />
 
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "HomeAndConstructionBusiness",
-  "name": "Gulfshine",
-  "image": "https://gulfshineservices.com/images/gulfshine-logo.png",
-  "telephone": "+18444853744",
-  "email": "contact@gulfshineservices.com",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "South Florida",
-    "addressRegion": "FL",
-    "addressCountry": "CA"
-  },
-  "url": "https://gulfshineservices.com",
-  "priceRange": "$$",
-  "openingHours": "Mo,Tu,We,Th,Fr 08:00-18:00"
-}
-</script>
-
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Infinity View Window Washing",
+      "image": "https://gulfshineservices.com/images/gulfshine-logo.png",
+      "url": "https://gulfshineservices.com",
+      "telephone": "+15617714853",
+      "email": "contact@gulfshineservices.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Downtown",
+        "addressLocality": "Fort Lauderdale",
+        "addressRegion": "FL",
+        "postalCode": "33301",
+        "addressCountry": "US"
+      },
+      "priceRange": "$$",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Fort Lauderdale"
+        },
+        {
+          "@type": "City",
+          "name": "Miami"
+        },
+        {
+          "@type": "City",
+          "name": "Boca Raton"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com",
+        "https://www.instagram.com"
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    }
+  </script>
 </head>
 
 <body>
+  <header id="header" class="site-header show">
+    <div class="header-container">
+      <div class="brand">
+        <a href="index.html" aria-label="Infinity View home">
+          <img src="images/Gulfshine-Logo.png" alt="Infinity View logo" />
+        </a>
+        <div class="brand-text">
+          <span class="brand-name">Infinity View</span>
+          <span class="brand-tagline">Window Washing • Pressure Washing</span>
+        </div>
+      </div>
 
+      <input type="checkbox" id="toggle-menu" class="menu-toggle-checkbox" aria-label="Toggle navigation" />
+      <label for="toggle-menu" class="hamburger-lines" aria-hidden="true">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </label>
 
-  <!-- Site Header (logo + navigation) -->
-  <header id="header" class="show">
-    <!-- Logo -->
-    <div class="header-logo">
-      <a href="index.html" aria-label="Home">
-        <img src="images\Gulfshine-Logo.png" alt="Gulfshine Logo" />
-      </a>
-    </div>
-    <!-- Checkbox for toggling menu -->
-    <input type="checkbox" id="toggle-menu" class="menu-toggle-checkbox" aria-label="Toggle navigation" />
-    <!-- Hamburger lines -->
-    <label for="toggle-menu" class="hamburger-lines">
-      <span class="line line1"></span>
-      <span class="line line2"></span>
-      <span class="line line3"></span>
-    </label>
-    <!-- Navigation -->
-    <nav class="header-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
-    <!-- Phone number (desktop only) -->
-    <div class="header-phone">
-      <a href="tel:+15617714853">(561) 771-GULF</a>
+      <nav class="header-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Our Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="header-phone" href="tel:+19545830222">(954) 583-0222</a>
+        <a class="header-cta" href="contact.html">Request a Quote</a>
+      </div>
     </div>
   </header>
 
-  <section id="hero" class="hero-section">
-    <!-- Overlay for contrast -->
-    <div class="hero-overlay"></div>
-    <div class="hero-content container">
-      <h1>Clean windows quickly and easily</h1>
-      <p>
-        We clean what you hate. No fluff, no excuses - just spotless windows, decks, and eavestroughs.
-      </p>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section class="service-section">
-    <div class="service-text">
-      <h2>Our Services</h2>
-      <p>
-        At Gulfshine Home Maintenance Services, we're redefining the standards of exterior care through innovation,
-        attention to detail, and a commitment to excellence. Our use of a cutting-edge purifying and deionizing water
-        system allows us to deliver a spotless, streak-free finish using only ultra-pure water - no harsh chemicals
-        required. By removing minerals and impurities, we achieve results that are not only visibly superior but also
-        longer lasting. Backed by professionalism, reliability, and a passion for precision, Infinity View is raising
-        the bar for what homeowners can expect from a maintenance company. We don't just clean - we make your property shine.
-      </p>
-    </div>
-
-    <div class="service-list">
-      <div class="service-item">
-        <img src="icon\cleaner.svg" alt="Window Cleaning icon" class="service-icon" />
-        <div>
-          <h3>Window Cleaning</h3>
-          <p>
-            Deionized water and a water-fed pole are used to clean the windows, frames, and sills.
-          </p>
-        </div>
-      </div>
-
-      <div class="service-item">
-        <img src="icon\pressure-sprayer.svg" alt="Gutter Cleaning icon" class="service-icon" />
-        <div>
-          <h3>Pressure Washing</h3>
-          <p>
-            We offer pressure washing services for driveways, garages, patios, and decks.
-          </p>
-        </div>
-      </div>
-
-      <div class="service-item">
-        <img src="icon\broom.svg" alt="Eavestrough Cleaning icon" class="service-icon" />
-        <div>
-          <h3>More Extras</h3>
-          <p>
-            We offer cleaning of the eavestroughs, soffits and siding cleaning.
-          </p>
-        </div>
-      </div>
-    </div>
-
-
-
-    <!-- Button -->
-    <div style="text-align: center;">
-      <a href="contact.html" class="mind-blowing-button">
-        Book Now
-      </a>
-    </div>
-  </section>
-
-  <!-- Customer Reviews Section -->
-  <section id="reviews" class="reviews-section">
-    <div class="container">
-      <h2>Customer Reviews</h2>
-      <blockquote class="review">
-        <p>
-          "Professional, reliable, and left our windows spotless. The pure water system made a huge difference: highly
-          recommend!"
-        </p>
-        <footer>— Samantha L.</footer>
-      </blockquote>
-    </div>
-  </section>
-
-  <!-- Our Work Section -->
-  <section id="our-work" class="our-work-section">
-    <div class="container">
-      <h2>Our Work</h2>
-      <p class="subtitle">Work That Speaks For Itself</p>
-      <div class="work-gallery">
-        <!-- Window, Frames and Sills Cleaning -->
-        <div class="work-item">
-          <h3>Before</h3>
-          <div class="images">
-            <figure>
-              <img src="images\before-after\work-before.JPEG" alt="Before Window, Frames and Sills Cleaning">
-
-            </figure>
-            <figure>
-              <img src="images\before-after\work-before-2.JPEG" alt="Before Window, Frames and Sills Cleaning">
-
-            </figure>
+  <main>
+    <section class="hero-slider" aria-label="Featured services">
+      <div class="hero-overlay"></div>
+      <div class="slider" data-slider>
+        <div class="slide is-active" data-slide
+          style="background-image: url('https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&fit=crop&w=1950&q=80');">
+          <div class="slide-content container">
+            <p class="eyebrow">Fort Lauderdale • Luxury Properties</p>
+            <h1>Brilliantly Clear Windows, Every Visit</h1>
+            <p>Our deionized pure-water system delivers a mirror-like finish on oceanfront estates and high-rise condos
+              across South Florida.</p>
+            <div class="hero-buttons">
+              <a href="contact.html" class="btn btn-primary">Book a Shine</a>
+              <a href="tel:+19545830222" class="btn btn-outline">Call (954) 583-0222</a>
+            </div>
           </div>
         </div>
-        <!-- After -->
-        <div class="work-item">
-          <h3>After</h3>
-          <div class="images">
-            <figure>
-              <img src="images\before-after\work-after.JPEG" alt="After Window, Frames and Sills Cleaning">
 
-            </figure>
-            <figure>
-              <img src="images\before-after\work-after-2.JPEG" alt="Before Window, Frames and Sills Cleaning">
+        <div class="slide" data-slide
+          style="background-image: url('https://images.unsplash.com/photo-1529429617124-aee0a9427d21?auto=format&fit=crop&w=1950&q=80');">
+          <div class="slide-content container">
+            <p class="eyebrow">Coastal Climate Ready</p>
+            <h2>Salt, Sand & Storm Residue Removed</h2>
+            <p>Protect your glass and curb appeal with quarterly maintenance plans tailored for Broward County homes and
+              storefronts.</p>
+            <div class="hero-buttons">
+              <a href="#services" class="btn btn-primary">Explore Services</a>
+              <a href="#contact-cta" class="btn btn-outline">Get a Fast Quote</a>
+            </div>
+          </div>
+        </div>
 
-            </figure>
+        <div class="slide" data-slide
+          style="background-image: url('https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1950&q=80');">
+          <div class="slide-content container">
+            <p class="eyebrow">Detail-Oriented Technicians</p>
+            <h2>Pressure Washing That Revives</h2>
+            <p>From marble pool decks to luxury storefronts, our soft-wash and pressure wash packages rejuvenate every
+              surface without damage.</p>
+            <div class="hero-buttons">
+              <a href="#process" class="btn btn-primary">See Our Process</a>
+              <a href="mailto:contact@gulfshineservices.com" class="btn btn-outline">Email Our Team</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Footer -->
+      <div class="slider-controls">
+        <button class="control control-prev" data-prev aria-label="Previous slide"></button>
+        <div class="slider-dots" data-dots></div>
+        <button class="control control-next" data-next aria-label="Next slide"></button>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Company highlights">
+      <div class="container metrics-grid">
+        <div>
+          <span class="metric">15+</span>
+          <p>Years perfecting glass care in South Florida.</p>
+        </div>
+        <div>
+          <span class="metric">100%</span>
+          <p>Satisfaction guarantee on every visit.</p>
+        </div>
+        <div>
+          <span class="metric">48 hr</span>
+          <p>Average turnaround for quotes in Broward County.</p>
+        </div>
+        <div>
+          <span class="metric">Eco</span>
+          <p>Pure water cleaning—no harsh chemicals in your landscaping.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Signature Services</span>
+          <h2>Exterior Detailing Built for the Sunshine State</h2>
+          <p>Our technicians use commercial-grade filtration, water-fed poles, and precision soft-wash equipment to keep
+            Fort Lauderdale properties pristine between storms.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">
+              <img src="icon/cleaner.svg" alt="Window cleaning icon" />
+            </div>
+            <h3>Luxury Window Cleaning</h3>
+            <p>Interior and exterior detailing of glass, frames, tracks, and screens using deionized water and lint-free
+              finish work.</p>
+            <ul>
+              <li>Oceanfront &amp; high-rise specialists</li>
+              <li>Hard water stain removal</li>
+              <li>Post-construction clean-up</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">
+              <img src="icon/pressure-sprayer.svg" alt="Pressure washing icon" />
+            </div>
+            <h3>Pressure &amp; Soft Washing</h3>
+            <p>Revive stucco, travertine, pavers, lanais, and storefront entries with precisely calibrated pressure.</p>
+            <ul>
+              <li>Soft-wash roof treatments</li>
+              <li>Pool decks &amp; patios</li>
+              <li>Commercial storefronts</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">
+              <img src="icon/broom.svg" alt="Additional services icon" />
+            </div>
+            <h3>Detail Enhancements</h3>
+            <p>Add-on services that keep your property photo-ready for showings, rentals, and special events.</p>
+            <ul>
+              <li>Screen enclosure cleaning</li>
+              <li>Gutter brightening &amp; flushing</li>
+              <li>Mirror &amp; glass railing polishing</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="process-section">
+      <div class="container process-grid">
+        <div class="process-copy">
+          <span class="eyebrow">How We Shine</span>
+          <h2>The Infinity View Concierge Process</h2>
+          <p>From the initial site walk to the final crystal-clear inspection, every step is designed to deliver a
+            seamless, white-glove experience for discerning homeowners and property managers.</p>
+          <ul>
+            <li><strong>On-Site Assessment:</strong> A dedicated project lead evaluates glass, elevations, and access to
+              design a safe, efficient plan.</li>
+            <li><strong>Pure-Water Technology:</strong> Triple-filtered water eliminates minerals, leaving flawless views
+              without residue.</li>
+            <li><strong>Meticulous Detailing:</strong> Frames, sills, tracks, and hardware receive the same precision as
+              the glass itself.</li>
+            <li><strong>Signature Finish:</strong> Final walkthrough with you to guarantee every pane sparkles from every
+              angle.</li>
+          </ul>
+          <a class="btn btn-primary" href="contact.html">Schedule Your Assessment</a>
+        </div>
+        <div class="process-media" role="presentation">
+          <div class="process-card">
+            <h3>Serving:</h3>
+            <p>Fort Lauderdale • Las Olas • Victoria Park • Coral Ridge • Wilton Manors • Pompano Beach • Boca Raton</p>
+            <p class="note">Licensed &amp; insured • OSHA-compliant for high-rise work</p>
+          </div>
+          <div class="process-image"
+            style="background-image: url('https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80');"
+            aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="review-ribbon" aria-label="Customer satisfaction">
+      <div class="container ribbon-grid">
+        <div>
+          <h2>"Windows so clear our guests thought they were open."</h2>
+          <p class="reviewer">— Samantha L., Victoria Park</p>
+        </div>
+        <div class="ratings">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <p>Google &amp; Nextdoor rated, trusted by luxury realtors and HOA boards.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="gallery-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Our Work</span>
+          <h2>Before &amp; After Transformations</h2>
+          <p>See how Infinity View elevates Fort Lauderdale properties from hazy to high-definition.</p>
+        </div>
+        <div class="gallery-grid">
+          <figure>
+            <img src="images/before-after/work-before.JPEG" alt="Before professional window cleaning" loading="lazy" />
+            <figcaption>Hurricane residue on oceanfront windows.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/before-after/work-after.JPEG" alt="After professional window cleaning" loading="lazy" />
+            <figcaption>Crystal clarity restored in one visit.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/before-after/work-before-2.JPEG" alt="Driveway before pressure washing" loading="lazy" />
+            <figcaption>Weathered pavers dulling curb appeal.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/before-after/work-after-2.JPEG" alt="Driveway after pressure washing" loading="lazy" />
+            <figcaption>Fresh, vibrant finish after soft washing.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-cta" class="cta-section">
+      <div class="container cta-grid">
+        <div class="cta-copy">
+          <span class="eyebrow">Let’s Talk Glass</span>
+          <h2>Ready for the Clearest View on the Block?</h2>
+          <p>Contact us for a complimentary exterior evaluation anywhere in Fort Lauderdale, Miami, Palm Beach, or Broward
+            County. We reply within one business day.</p>
+          <div class="cta-actions">
+            <a href="tel:+19545830222" class="btn btn-primary">Call (954) 583-0222</a>
+            <a href="mailto:contact@gulfshineservices.com" class="btn btn-outline">Email Our Team</a>
+          </div>
+        </div>
+        <form class="cta-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="db81d39a-7636-4c54-85d6-deaececc4a8c" />
+          <div class="form-field">
+            <label for="cta-name">Full Name</label>
+            <input id="cta-name" name="name" type="text" placeholder="Jane Doe" required />
+          </div>
+          <div class="form-field">
+            <label for="cta-phone">Phone Number</label>
+            <input id="cta-phone" name="phone" type="tel" placeholder="(954) 555-1234" required />
+          </div>
+          <div class="form-field">
+            <label for="cta-email">Email</label>
+            <input id="cta-email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-field">
+            <label for="cta-service">Service Needed</label>
+            <input id="cta-service" name="service" type="text" placeholder="High-rise window detailing" />
+          </div>
+          <button type="submit" class="btn btn-primary">Request My Quote</button>
+          <p class="form-note">By submitting, you agree to our <a href="privacy.html">privacy policy</a>.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="faq-section" aria-label="Frequently asked questions">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">FAQ</span>
+          <h2>South Florida Window Cleaning Questions, Answered</h2>
+        </div>
+        <div class="faq-grid">
+          <article class="faq-item">
+            <h3>How often should Fort Lauderdale homes schedule window cleaning?</h3>
+            <p>Coastal properties benefit from quarterly exterior cleanings to combat salt air buildup. Interior windows are
+              typically serviced twice per year, or more frequently for showcase views.</p>
+          </article>
+          <article class="faq-item">
+            <h3>What makes pure-water window cleaning better for oceanfront glass?</h3>
+            <p>Deionized water removes all minerals, so windows dry spot-free—even under intense Florida sun. The process is
+              safe for landscaping and won’t etch delicate finishes.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Do you offer maintenance plans for condos and commercial buildings?</h3>
+            <p>Yes. We partner with property managers to create customized schedules for high-rises, luxury condos, hotels,
+              and retail storefronts throughout Broward and Miami-Dade counties.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Are you insured for ladder and aerial lift work?</h3>
+            <p>Absolutely. Infinity View carries full liability and workers’ compensation insurance and follows OSHA best
+              practices for high-access cleaning.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <footer class="footer-section">
-    <div class="footer-container">
-      <div class="footer-contact">
-        <h3>Contact Us</h3>
-        <p><a href="tel:+18444853744">1-844-GULFSHINE</a></p>
-        <p><a href="tel:+15617714853">(561) 771-GULF</a></p>
-        <p><a href="mailto:contact@gulfshineservices.com">contact@gulfshineservices.com</a></p>
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="footer-logo" aria-label="Infinity View home">
+          <img src="images/Gulfshine-Logo.png" alt="Infinity View logo" />
+        </a>
+        <p>Infinity View Window Washing brings concierge-level glass and exterior care to Fort Lauderdale, Miami, and the
+          greater South Florida coastline.</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul class="footer-list">
+          <li><a href="tel:+19545830222">(954) 583-0222</a></li>
+          <li><a href="mailto:contact@gulfshineservices.com">contact@gulfshineservices.com</a></li>
+          <li>Fort Lauderdale, Florida</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul class="footer-list">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Our Process</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Service Areas</h3>
+        <ul class="footer-list">
+          <li>Fort Lauderdale</li>
+          <li>Miami &amp; Miami Beach</li>
+          <li>Boca Raton &amp; Palm Beach</li>
+          <li>Broward &amp; Palm Beach Counties</li>
+        </ul>
       </div>
     </div>
-    <hr class="footer-divider">
-    <p class="footer-copy">
-      © 2025 Gulfshine | <a href="privacy.html" class="footer-link">Privacy Policy</a> | Website by <a
-        href="https://bensilver.ca" class="footer-link" target="_blank" rel="noopener">BenSilver.ca</a>
-    </p>
-
+    <div class="footer-bottom">
+      <p>© 2025 Infinity View Window Washing. Crafted for stunning South Florida views.</p>
+    </div>
   </footer>
 
-
-  <!--Script for Header-Footer-->
   <script src="js/Header-Footer.js"></script>
+  <script src="js/slider.js" defer></script>
 </body>
-
 </html>
